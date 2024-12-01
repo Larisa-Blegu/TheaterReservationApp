@@ -27,7 +27,7 @@ public class BookingServlet extends HttpServlet {
         }
 
         if (name.length() < 4) {
-            response.getWriter().write("Name is too short");
+            response.getWriter().write("Numele este prea scurt");
             return;
         }
 
