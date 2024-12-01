@@ -22,12 +22,12 @@ public class BookingServlet extends HttpServlet {
 
         // Validare simplă
         if (name.isEmpty() || email.isEmpty() || phone.isEmpty() || play.isEmpty() || date.isEmpty() || ticketType.isEmpty()) {
-            response.getWriter().write("Toate câmpurile sunt obligatorii!");
+            response.getWriter().write("All fields are mandatory!");
             return;
         }
 
         if (name.length() < 4) {
-            response.getWriter().write("Numele este prea scurt");
+            response.getWriter().write("Name is too short");
             return;
         }
 
